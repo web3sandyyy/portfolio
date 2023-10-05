@@ -2,26 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.main{
+  background-image: url(../app/assets/darkbg3.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+.glass{
+  background: linear-gradient(0deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  backdrop-filter: blur(15px);
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+.glasstwo{
+  /* background: linear-gradient(0deg , rgba(229, 229, 229, 0.1) 0%, rgba(175, 137, 202, 0.155) 100%);
+  backdrop-filter: blur(50px); */
+  /* transition: all 0.5s ease-in-out;  */
+
+  background: linear-gradient(0deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  backdrop-filter: blur(30px);
 }
