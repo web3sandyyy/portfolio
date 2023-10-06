@@ -9,16 +9,45 @@
   background-repeat: no-repeat;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .glass{
   background: linear-gradient(0deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
   backdrop-filter: blur(15px);
-
 }
 .glasstwo{
-  /* background: linear-gradient(0deg , rgba(229, 229, 229, 0.1) 0%, rgba(175, 137, 202, 0.155) 100%);
-  backdrop-filter: blur(50px); */
-  /* transition: all 0.5s ease-in-out;  */
-
   background: linear-gradient(0deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(20px);
+}
+
+.logo{
+  transition: transform 1s ease-in-out;
+}
+
+.logo:hover {
+  transform: translateX(-100%); /* Slide the active logo to the left */
+}
+
+a{
+  text-decoration: none;
+}
+
+.profile{
+  animation: profile__animate 8s ease-in-out infinite 1s ;
+}
+
+@keyframes profile__animate{
+  0% {
+       border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+  }
+  50% {
+       border-radius: 30% 60% 70% 40%/ 50% 60% 30% 60%;
+  }
+  100% {
+       border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+  }
+  
+  
 }
