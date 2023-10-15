@@ -1,76 +1,75 @@
 import React from 'react'
 import Image from 'next/image'
 import ss from '../assets/projectss.png'
-import  html  from "../assets/html-5.png"
-import  bootstrap  from "../assets/bootstrap.png"
-import  css  from "../assets/css.png"
-import  git  from "../assets/git-icon.png"
-import  code  from "../assets/coding.png"
-import  web  from "../assets/web.png"
+import ss2 from '../assets/project2ss.png'
+import  react  from "../assets/react-js-icon.png"
+import  hardhat  from "../assets/hardhat-icon.png"
+import  tailwind  from "../assets/tailwind-css-icon.png"
+import  vite  from "../assets/Vitejs.png"
 import "../globals.css"
+import Link from 'next/link'
 
 export default function Projects() {
   return (
-    <div className='p-4 glasstwo border mx-4 rounded-xl w-4/5 md-3/5'>
-      <p className="text-center text-4xl font-bold mb-4 py-4">Projects</p>
+    <div className='px-[10vw] py-16 glass-copy border mx-4 rounded-xl w-4/5 lg:w-[70%]'>
+      <p className="text-center text-4xl font-bold my-4">Projects</p>
       <div className="flex gap-4 flex-col md:flex-row">
 
-        <div className="p-4 glasstwo rounded-xl border md:w-1/2 w-full ">
+        <div className="p-4 glass-copy project-bg rounded-xl border md:w-1/2 w-full  scrollbar-div ">
           <Image
             src={ss}
-            className="h-auto w-fit mx-auto object-scale-down p-2"
+            className="h-auto w-fit mx-auto rounded-sm object-scale-down   example"
             alt="project ss"
           />
-          <p className="font-bold text-center text-3xl border-b py-4">
+          <p className="font-bold text-center text-3xl py-4 project-title">
             Certify Chain
           </p>
-          <p className="h-20 overflow-y-auto p-2 text-justify">
-            This is the small desc of the project it doesnt have to be to big
-            you know
+          <p className="h-20 overflow-y-auto p-2 mt-2 text-justify mb-2 scrollbar">
+          Created a blockchain-based certificate generation system for our college, enabling secure and wallet-free interactions with the
+technology.
           </p>
+
           <div className="flex justify-between gap-2">
-            <div className="flex flex-wrap gap-1">
-              <Image src={html} alt='html' className="h-8 w-auto object-scale-down" />
-              <Image src={css} alt='css' className="h-8 w-auto object-scale-down" />
-              <Image src={git} alt='git' className="h-8 w-auto object-scale-down" />
-              <Image src={bootstrap} alt='bootstrap' className="h-8 w-auto object-scale-down" />
+            <div className="flex flex-wrap gap-1 items-center">
+              <Image src={react} alt='react' className="h-6 w-auto object-scale-down" />
+              <Image src={tailwind} alt='tailwind' className="h-6 w-auto object-scale-down" />
+              <Image src={hardhat} alt='hardhat' className="h-6 w-auto object-scale-down" />
             </div>
-            <div className="flex gap-1">
-              <button className='border p-2 rounded-xl'>Demo</button>
-              <button className='border p-2 rounded-xl'>Code</button>
+            <div className="flex gap-1 items-center flex-col lg:flex-row">
+              <a  href='https://www.linkedin.com/posts/sandeep-prajapatii_certifychain-blockchain-educationrevolution-activity-7114249133145677825-TQA6?utm_source=share&utm_medium=member_android' className='border p-2 rounded-xl h-fit' target='_blank'>Demo</a>
+              {/* <a href='' className='border p-2 rounded-xl h-fit'>Code</a> */}
+            </div>
+          </div>
+        </div>
+        <div className="p-4 glass-copy project-bg rounded-xl border md:w-1/2 w-full  scrollbar-div ">
+          <Image
+            src={ss2}
+            className="h-auto w-fit mx-auto rounded-sm object-scale-down   example"
+            alt="project ss"
+          />
+          <p className="font-bold text-center text-3xl py-4 project-title">
+            CryptoCafe
+          </p>
+          <p className="h-20 overflow-y-auto p-2 mt-2 text-justify mb-2 scrollbar">
+          This website lets you donate or give reward to the creator in crypto
+          </p>
+
+          <div className="flex justify-between gap-2">
+            <div className="flex flex-wrap gap-1 items-center">
+            <Image src={vite} alt='react' className="h-6 w-auto object-scale-down" />
+              <Image src={tailwind} alt='tailwind' className="h-6 w-auto object-scale-down" />
+              <Image src={hardhat} alt='hardhat' className="h-6 w-auto object-scale-down" />
+            </div>
+            <div className="flex gap-1 items-center flex-col lg:flex-row">
+              <a href='https://cryptocafe-sandeep.netlify.app/' target='_blank' className='border p-2 rounded-xl h-fit'>Demo</a>
+              <a href='https://github.com/sandeep-prajapatii/CryptoCafe/tree/main' target='_blank' className='border p-2 rounded-xl h-fit'>Code</a>
             </div>
           </div>
         </div>
 
-        <div className="p-4 glasstwo rounded-xl border md:w-1/2 w-full ">
-          <Image
-            src={ss}
-            className="h-[7em] w-auto mx-auto object-scale-down"
-            alt="project ss"
-          />
-          <p className="font-bold text-center text-3xl border-b py-4">
-            Certify Chain
-          </p>
-          <p className="h-20 overflow-y-auto p-2 text-justify">
-            This is the small desc of the project it doesnt have to be to big
-            you know
-          </p>
-          <div className="flex justify-between gap-2">
-            <div className="flex flex-wrap gap-1">
-              <Image src={html} alt='html' className="h-8 w-auto object-scale-down" />
-              <Image src={css} alt='css' className="h-8 w-auto object-scale-down" />
-              <Image src={git} alt='git' className="h-8 w-auto object-scale-down" />
-              <Image src={bootstrap} alt='bootstrap' className="h-8 w-auto object-scale-down" />
-            </div>
-            <div className="flex gap-1">
-              <button className='border p-2 rounded-xl'>Demo</button>
-              <button className='border p-2 rounded-xl'>Code</button>
-            </div>
-          </div>
-        </div>
 
       </div>
-      <button className='p-2 border rounded-xl mx-auto block my-6'> View More</button>
+      {/* <Link href="/projects" className='p-2 border rounded-xl mx-auto block my-6 w-min whitespace-nowrap'> View More</Link> */}
     </div>
   );
 }
