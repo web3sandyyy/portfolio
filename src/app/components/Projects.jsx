@@ -1,13 +1,12 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
-import ss from '../assets/projectss.png'
-import ss2 from '../assets/project2ss.png'
-import  react  from "../assets/react-js-icon.png"
-import  hardhat  from "../assets/hardhat-icon.png"
-import  tailwind  from "../assets/tailwind-css-icon.png"
-import  vite  from "../assets/Vitejs.png"
-import "../globals.css"
 import Link from 'next/link'
+import "../globals.css"
+import Project from './Project'
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 export default function Projects() {
   return (
@@ -15,6 +14,25 @@ export default function Projects() {
       <p className="text-center text-4xl font-bold my-4">Projects</p>
       <div className="flex gap-4 flex-col md:flex-row">
 
+        <div className='gap-4 w-full flex flex-col md:flex-row flex-1'>
+          <Project
+          images={["/CertifyChain/1.png"]}
+            title="Certify Chain"
+            description="Created a blockchain-based certificate generation system for our college, enabling secure and wallet-free interactions with the technology."
+            tools={["reactjs","tailwind","hardhat","solidity"]}
+            demoLink="https://www.linkedin.com/posts/sandeep-prajapatii_certifychain-blockchain-educationrevolution-activity-7114249133145677825-TQA6?utm_source=share&utm_medium=member_android"
+          />
+          <Project
+            images={["/CryptoCafe/1.png"]}
+            title="Crypto Cafe"
+            description="This website lets you donate or give reward to the creator in crypto."
+            tools={["reactjs","tailwind","hardhat","solidity"]}
+            demoLink="https://cryptocafe-sandeep.netlify.app/"
+            codeLink="https://github.com/sandeep-prajapatii/CryptoCafe/tree/main"
+        />
+        </div>
+
+{/* 
         <div className="p-4 glass-copy project-bg rounded-xl border md:w-1/2 w-full  scrollbar-div ">
           <Image
             src={ss}
@@ -37,10 +55,10 @@ technology.
             </div>
             <div className="flex gap-1 items-center flex-col lg:flex-row">
               <a  href='https://www.linkedin.com/posts/sandeep-prajapatii_certifychain-blockchain-educationrevolution-activity-7114249133145677825-TQA6?utm_source=share&utm_medium=member_android' className='border p-2 rounded-xl h-fit' target='_blank'>Demo</a>
-              {/* <a href='' className='border p-2 rounded-xl h-fit'>Code</a> */}
             </div>
           </div>
         </div>
+
         <div className="p-4 glass-copy project-bg rounded-xl border md:w-1/2 w-full  scrollbar-div ">
           <Image
             src={ss2}
@@ -65,11 +83,11 @@ technology.
               <a href='https://github.com/sandeep-prajapatii/CryptoCafe/tree/main' target='_blank' className='border p-2 rounded-xl h-fit'>Code</a>
             </div>
           </div>
-        </div>
+        </div> */}
 
 
       </div>
-      {/* <Link href="/projects" className='p-2 border rounded-xl mx-auto block my-6 w-min whitespace-nowrap'> View More</Link> */}
+      <Link href="/projects" className='p-2 border rounded-xl mx-auto block my-6 w-min whitespace-nowrap'> View More</Link>
     </div>
   );
 }

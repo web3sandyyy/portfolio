@@ -1,13 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
 
-@layer base {
+/* @layer base {
   body {
     font-family: 'Lexend', system-ui, sans-serif;
   }
-}
+} */
 
 
 .main{
@@ -16,7 +16,8 @@
   background-position: center;
   background-color: #0c1225;
   background-repeat: no-repeat;
-  font-family: '"Lexend"', sans-serif;
+  min-height: 100vh;
+  /* font-family: '"Lexend"', sans-serif; */
 }
 
 html {

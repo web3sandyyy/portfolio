@@ -23,12 +23,12 @@ export default function Navbar() {
       <div className="header-blur text-white fixed w-full flex justify-around items-center z-10">
         <Link href="/" className="text-3xl py-2 font-semibold cursor-pointer no-underline">Sandeep.</Link>
 
-        <ul className="md:flex hidden items-center text-lg">
-          <li className={liCSS}><a href="#about" className="scroll-smooth">ABOUT</a></li>
-          <li className={liCSS}><a href="#project">PROJECT</a></li>
-          <li className={liCSS}><a href="#contact">CONTACT</a></li>
-          <li className={`${liCSS} border-none`}><a href='resume.pdf' download={"SandeepsResume.pdf"}>RESUME</a></li>
-        </ul>
+        <div className="md:flex hidden items-center text-lg">
+          <a  className={liCSS} href="#about">ABOUT</a>
+          <a  className={liCSS} href="#project">PROJECT</a>
+          <a  className={liCSS} href="#contact">CONTACT</a>
+          <a  className={`${liCSS} border-none`} href='resume.pdf' download={"SandeepsResume.pdf"}>RESUME</a>
+        </div>
 
         <GiHamburgerMenu
           onClick={toggleMenu}
@@ -44,12 +44,12 @@ export default function Navbar() {
             className="text-white text-3xl  m-4"
           />
 
-          <ul className="flex flex-col h-full  text-lg">
-            <li className={sidenav}><a href="#about" >ABOUT</a></li>
-            <li className={sidenav}><a href="#project">PROJECT</a></li>
-            <li className={sidenav}><a href="#contact">CONTACT</a></li>
-            <li className={`${sidenav} border-none`}>RESUME</li>
-          </ul>
+          <div className="flex flex-col h-full  text-lg">
+            <a className={sidenav} href="#about" >ABOUT</a>
+            <a className={sidenav} href="#project">PROJECT</a>
+            <a className={sidenav} href="#contact">CONTACT</a>
+            <a className={`${sidenav} border-none`} href='resume.pdf' download={"SandeepsResume.pdf"}>Resume</a>
+          </div>
         </div>
       )}
     </>
