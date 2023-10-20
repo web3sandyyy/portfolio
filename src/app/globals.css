@@ -102,3 +102,20 @@ border: 2px solid rgba(255, 255, 255, 0.217);
 .tools{
   filter: drop-shadow(1px 1px 1px white);
 }
+
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-130px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.intro{
+  animation: myAnim 1.5s ease 0s 1 normal forwards;
+}
