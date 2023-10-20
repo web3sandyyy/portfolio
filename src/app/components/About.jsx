@@ -12,7 +12,7 @@ export default function About() {
         <p className='mb-6 text-center text-4xl font-bold'>About me</p>
         <div className='flex flex-col md:flex-row items-center gap-4'>
             <Image src={profile} alt='profile' className="h-[12em] w-[12em] rounded-xl object-scale-down"/>
-            <p className='p-2 text-xl text-justify'>A passionate Blockchain and Web developer with a relentless <u><i>thirst for knowledge</i></u> and the audacity to do it. I'm also passionate about delving into technology, turning each day into an exciting <u><i>journey of creative innovation.</i></u></p>
+            <p className='p-2 text-xl text-justify'>A passionate Blockchain and Web developer with a relentless <u><i>thirst for knowledge</i></u> and the audacity to do it.</p>
         </div>
         <Marquee autoFill="true" pauseOnHover="true" className='flex mt-4 p-4 max-w-4/5 w-3/5 glass-copy overflow-hidden rounded-lg' >
           {
