@@ -8,16 +8,16 @@ export default function About() {
   const icons = ["html", "bootstrap", "css", "git", "github", "hardhat", "js", "nextjs", "python", "reactjs", "solidity", "tailwind"]
 
   return (
-    <div className='mx-6  glass-copy rounded-xl px-[10vw] py-16  w-4/5 lg:w-[70%]'>
-        <p className='text-center text-4xl font-bold mb-6'>About me</p>
-        <div className='flex gap-4 flex-col md:flex-row items-center'>
-            <Image src={profile} alt='profile' className="rounded-xl  h-[12em] w-[12em] object-scale-down"/>
-            <p className='text-xl p-2 text-justify'>I am passionate about leveraging the power of blockchain technology to create secure and transparent solutions for a wide range of industries.</p>
+    <div className='mx-6 px-[10vw] py-16 w-4/5 lg:w-[70%] glass-copy rounded-xl'>
+        <p className='mb-6 text-center text-4xl font-bold'>About me</p>
+        <div className='flex flex-col md:flex-row items-center gap-4'>
+            <Image src={profile} alt='profile' className="h-[12em] w-[12em] rounded-xl object-scale-down"/>
+            <p className='p-2 text-xl text-justify'>I am passionate about leveraging the power of blockchain technology to create secure and transparent solutions for a wide range of industries.</p>
         </div>
-        <Marquee autoFill="true" pauseOnHover="true" className='glass-copy overflow-hidden p-4 rounded-lg max-w-4/5 w-3/5 mt-4  flex' >
+        <Marquee autoFill="true" pauseOnHover="true" className='flex mt-4 p-4 max-w-4/5 w-3/5 glass-copy overflow-hidden rounded-lg' >
           {
             icons.map((icon, index)=>
-              <img src={`/tools/${icon}.png`} alt={icon} key={index} className='h-8 w-auto inline mx-[2vw]'/>)
+              <img src={`/tools/${icon}.png`} alt={icon} key={index} className='h-8 w-auto mx-[2vw] inline tools'/>)
           }
         </Marquee>
     </div>

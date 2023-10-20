@@ -1,20 +1,19 @@
 import React from "react";
 import Image from 'next/image';
-// import img from '../assets/projects/project1/'
-
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "../globals.css"
 
 export default function Project({images, title, description, tools, demoLink, codeLink  }) {
   return (
     <div className=" text-white p-4 glass-copy project-bg rounded-xl border mt-4 scrollbar-div">
       {images.length > 1 ? (
 
-        <Carousel autoPlay="true" infiniteLoop="true" stopOnHover="true" showStatus={false} showThumbs={false}>
+        <Carousel autoPlay="true" infiniteLoop="true" stopOnHover="true" showStatus={false} showThumbs={false} className="project-img">
           {images.map((image, index)=>(
             <img
             src={image}
-            className="h-auto mx-auto rounded-sm object-scale-down   example"
+            className="h-auto mx-auto rounded-sm object-scale-down"
             alt="project ss"
             key={index}
             />
@@ -24,7 +23,7 @@ export default function Project({images, title, description, tools, demoLink, co
       ) : (
         <img
             src={images}
-            className="h-auto w-fit mx-auto rounded-sm object-scale-down   example"
+            className="h-auto w-fit mx-auto rounded-sm object-scale-down project-img"
             alt="project ss"
             />
       )}
@@ -43,7 +42,7 @@ export default function Project({images, title, description, tools, demoLink, co
               key={index}
               src={`/tools/${tool}.png`}
               alt={tool}
-              className="h-6 w-auto object-scale-down"
+              className="h-6 w-auto object-scale-down tools"
               width={90}
               height={90}
             />
