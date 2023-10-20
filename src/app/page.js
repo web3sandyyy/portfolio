@@ -11,9 +11,9 @@ export default function Home() {
     <div className="bg text-white ">
       <Head>
         <title>Sandeep's Portfolio</title>
-        <meta name="description" content="I am a Blockchain and Web Developer." />
+        <meta name="description" content="I'm a Passionate Blockchain Developer." />
         <meta property="og:title" content="Sandeep's Portfolio" />
-        <meta property="og:description" content="I am a Blockchain and Web Developer." />
+        <meta property="og:description" content="I'm a Passionate Blockchain Developer." />
         <meta property="og:image" content="https://sandeepp-portfolio.vercel.app/profile.jpg" />
         <meta property="og:url" content="https://sandeepp-portfolio.vercel.app/" />
         <meta property="og:type" content="website" />

@@ -18,7 +18,7 @@ export default function Contact() {
                 </a>
             </div>
             <a className='p-4 block mb-4 border glass-copy rounded-xl text-xl text-center' href="https://mail.google.com/mail/?view=cm&fs=1&to=sandeeprajapati18@gmail.com&su=Your%20Portfolio%20Caught%20My%20Eye" target='_blank' >Email</a>
-            <a className='p-4 block mb-4 border glass-copy rounded-xl text-xl text-center' href='resume.pdf' download={"Sandeep's Resume.pdf"}>Resume</a>
+            <a className='p-4 block border glass-copy rounded-xl text-xl text-center' href='resume.pdf' download={"Sandeep's Resume.pdf"}>Resume</a>
         </div>
     </div>
   )
