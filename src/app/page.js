@@ -4,10 +4,20 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import profile from "./assets/profile.jpg";
 import Image from "next/image";
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <div className="bg text-white ">
+      <Head>
+        <title>Sandeep's Portfolio</title>
+        <meta name="description" content="I am a Blockchain and Web Developer." />
+        <meta property="og:title" content="Sandeep's Portfolio" />
+        <meta property="og:description" content="I am a Blockchain and Web Developer." />
+        <meta property="og:image" content="https://sandeepp-portfolio.vercel.app/profile.jpg" />
+        <meta property="og:url" content="https://sandeepp-portfolio.vercel.app/" />
+        <meta property="og:type" content="website" />
+      </Head>
       <Navbar />
       <div className="flex justify-center items-center min-h-screen">
         <div className="px-[10vw] py-16 glass-copy rounded-xl flex flex-col lg:flex-row gap-4 items-center text-center md:text-left mx-4 w-4/5  lg:w-[70%] justify-around">
