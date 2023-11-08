@@ -73,7 +73,7 @@ export default function Contact() {
             <a className='p-4 block mb-4 border glass-copy rounded-xl text-xl text-center' href="https://mail.google.com/mail/?view=cm&fs=1&to=sandeeprajapati18@gmail.com&su=Your%20Portfolio%20Caught%20My%20Eye" target='_blank' >Email</a>
             <a className='p-4 block border glass-copy rounded-xl text-xl text-center' href='resume.pdf' download={"Sandeep's Resume.pdf"}>Resume</a>
         </div> */}
-              <form  onSubmit={sendEmail} className='flex flex-col p-6 w-4/5 md:w-3/5 mx-auto '>
+              <form  onSubmit={sendEmail} className='flex flex-col p-6 w-4/5 md:w-3/5 mx-auto project-bg'>
         <input required className='p-2 mb-4 mx-auto w-full max-w-[600px] border-2 glass-copy rounded-lg' type='text'    name="name"
         placeholder="Name"
         value={name}
